@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <title>Jquery day-1 hide,delay,show,toggle functions</title>
+</head>
+<body>
+    <p class="p1">1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, cum. Incidunt, repellendus. Laboriosam repudiandae suscipit, voluptatum quia, assumenda eum optio aliquam cumque in sunt magnam, quidem necessitatibus consequuntur. Enim necessitatibus reiciendis possimus adipisci facilis pariatur rem, deserunt animi. Aliquam voluptate voluptatem reprehenderit laborum! Facilis, saepe error cupiditate explicabo nihil nemo suscipit consectetur debitis? Tempore, pariatur, eius reiciendis, odio adipisci quis nobis quia provident amet blanditiis exercitationem consequuntur temporibus error obcaecati modi asperiores hic optio voluptatibus numquam.</p>
+    <p class="p2">2 Rerum quis vero dolor, dignissimos molestiae quaerat ea blanditiis accusamus, optio amet molestias natus. Ipsum nemo, nostrum accusantium, minus iste possimus voluptate architecto nesciunt perspiciatis earum, repellat in quas iusto. Eum quae impedit perspiciatis soluta placeat error accusamus praesentium, et ad commodi dignissimos esse quasi, laborum expedita. Est, porro nulla tenetur voluptatum laudantium consequuntur illo corrupti perspiciatis! Debitis, iste laboriosam dignissimos rerum a nostrum dolor voluptatibus eveniet explicabo natus illo ad aut delectus voluptate.</p>
+
+    <script src="jquery-3.6.4.min.js"></script>
+    
+
+    <!-- hide,delay,show -->
+    <!-- <script>
+        $(".p1").click(function(){
+            $(".p1").hide(2000)       /* time in milliseconds */
+        })
+
+        $(".p2").click(function(){
+            $(".p2").hide(2000)       /* time in milliseconds */
+        })
+    </script> -->
+
+    <script>
+        $("p").click(function(){
+            $(this).hide(2000).delay(1000).show(2000)       /* time in milliseconds */
+        })
+    </script>
+
+    <!-- <script>
+        $(".p1").hide();
+        function demo()
+        {
+            $(".p2").hide(2000)       /* time in milliseconds */
+            $(".p1").delay(2000).show(2000)
+        }
+
+        $(".p2").click(demo)
+    </script> -->
+
+    <!-- toggle function -->
+    <button>Click Here</button><br><br>
+    <img src="images/img1.jpg" height="200px">
+
+    <script>
+        $("img").hide()
+        $("button").click(function(){
+            $("img").toggle(1000)
+        })
+    </script>
+</body>
+</html>

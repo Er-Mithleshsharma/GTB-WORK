@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <title>Jquery day-4 hover event, password hide/show with jquery</title>
+</head>
+<body>
+    <h1>Main Heading</h1>
+
+    <script src="jquery-3.6.4.min.js"></script>
+    <script>
+       /*  $("h1").hover(function(){
+            $(this).css({color:"red"})
+        },function(){
+            $(this).css({color:""})
+        }) */
+
+
+        $("h1").on({
+            click:function(){$(this).css({color:"red"})},
+            mouseover:function(){$(this).css({textDecoration:"underline"})},
+            mouseout:function(){$(this).css({textDecoration:"none"})},
+        })
+    </script>
+
+    <!-- password hide/show with jquery -->
+
+    <style>
+        .open,.close
+        {
+            margin-left: -22px;
+        }
+    </style>
+
+    <input type="password" class="pass" placeholder="Enter Password">
+    <img src="images/view.png" height="12px" class="open">
+    <img src="images/hidden.png" height="12px" class="close">
+
+    <script>
+        $(".close").hide();
+
+        $(".open").click(function(){
+            $(".pass").attr("type","text")
+            $(".open").hide();
+            $(".close").show()
+        })
+
+        $(".close").click(function(){
+            $(".pass").attr("type","password")
+            $(".close").hide();
+            $(".open").show()
+        })
+    </script>
+
+   <!-- attr() function is used to get or change the value element's attribute -->
+
+   <h1><font color="red">click here</font></h1>
+   <script>
+    $("h1").click(function(){
+        $("font",this).attr("color","blue")
+    })
+   </script>
+</body>
+</html>

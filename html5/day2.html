@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 day-2 details,summary, fieldset, legend, figure, figcaption</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        summary
+        {
+            /* background-color: lightgreen; */
+        }
+        details
+        {
+            background-color: lightblue;
+            padding: 15px;
+            border: 2px solid red;
+        }
+        form
+        {
+            background-color: lightblue;
+            padding: 7px;
+            width: 40%;
+        }
+        legend
+        {
+            color: red;
+            font-weight: bold
+        }
+        fieldset
+        {
+            border: 2px solid red;
+        }
+
+        figure
+        {
+            width: 30%;
+            margin-right: 3.33%;
+            float: left;
+            margin-left: 0;
+        }
+        figure img
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- details,summary -->
+    <details>
+        <summary>Click to open</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, perferendis, et facere reprehenderit suscipit dicta aperiam aspernatur adipisci vel, id enim laborum voluptates ut iste quasi est non nam aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, perferendis, et facere reprehenderit suscipit dicta aperiam aspernatur adipisci vel, id enim laborum voluptates ut iste quasi est non nam aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, perferendis, et facere reprehenderit suscipit dicta aperiam aspernatur adipisci vel, id enim laborum voluptates ut iste quasi est non nam aliquid.</p>
+    </details><br><br>
+
+    <!-- fieldset, legend -->
+    <form action="day1 1.html">
+        <fieldset>
+            <legend>Personal Info:</legend>
+            <label>Name: </label><input type="text" placeholder="Enter Name"><br><br>
+            <label>Phone: </label><input type="tel" placeholder="Enter Phone No"><br><br>
+            <label>Email: </label><input type="email" placeholder="Enter Email Id"><br><br>
+            <label>Password: </label><input type="password" placeholder="Enter Password"><br><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Company Info:</legend>
+            <label>Company Name: </label><input type="text" placeholder="Enter Company Name"><br><br>
+            <label>Company Phone: </label><input type="tel" placeholder="Enter Company Phone No"><br><br>
+            <label>Company Email: </label><input type="email" placeholder="Enter Company Email Id"><br><br>
+            <label>Company Password: </label><input type="password" placeholder="Enter Company Password"><br><br>
+        </fieldset><br>
+
+        <input type="submit" value="Signup">
+    </form>
+
+    <figure>
+        <img src="images/img2.jpg" alt="">
+        <figcaption>
+            <h3>CACTUS INDOOR</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tempore dolorem itaque, laudantium harum eos cupiditate maiores. Voluptatem aut, tempora expedita quos reiciendis eos, optio modi officia alias, commodi minus.</p>
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/img2.jpg" alt="">
+        <figcaption>
+            <h3>CACTUS INDOOR</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tempore dolorem itaque, laudantium harum eos cupiditate maiores. Voluptatem aut, tempora expedita quos reiciendis eos, optio modi officia alias, commodi minus.</p>
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/img2.jpg" alt="">
+        <figcaption>
+            <h3>CACTUS INDOOR</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tempore dolorem itaque, laudantium harum eos cupiditate maiores. Voluptatem aut, tempora expedita quos reiciendis eos, optio modi officia alias, commodi minus.</p>
+        </figcaption>
+    </figure>
+</body>
+</html>

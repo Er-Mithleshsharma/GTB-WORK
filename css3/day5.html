@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 day-5 table properties</title>
+    <style>
+        table
+        {
+            height: 300px;
+            width: 400px;
+            /* border: 1px solid red; */
+            /*border-collapse: collapse;              // separate, collapse */
+            border-spacing: 0px;
+            /* border-spacing: 10px; */
+            /* empty-cells: hide; */
+            table-layout: fixed;
+        }
+        table,td,th
+        {
+            border: 1px solid red;
+        }
+        caption
+        {
+            color: red;
+            font-style: italic;
+            font-size: 0.9em;
+            font-family: calibri;
+            caption-side: bottom;
+        }
+        /* table tr:nth-of-type(even)
+        {
+            background-color: lightblue;
+        }
+        table tr:nth-of-type(odd)
+        {
+            background-color: lightgreen;
+        } */
+
+        /* table td:nth-of-type(even)
+        {
+            background-color: lightblue;
+        }
+        table td:nth-of-type(odd)
+        {
+            background-color: lightgreen;
+        } */
+
+        /* table tr:first-of-type
+        {
+            background-color: lightblue;
+        }
+        table tr:last-of-type
+        {
+            background-color: lightblue;
+        } */
+
+        /* table td:first-of-type
+        {
+            background-color: lightblue;
+        }
+        table td:last-of-type
+        {
+            background-color: lightblue;
+        } */
+
+        table tr:first-of-type
+        {
+            transition: all 1s linear;
+        }
+        table:hover tr:first-of-type
+        {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!-- <table border="1px"> -->
+    <!-- <table cellspacing="0"> -->
+    <!-- <table cellspacing="10px"> -->
+    <table>
+        <caption>STUDENT DETAILS TABLE</caption>
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Roll No</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Rohan</td>
+            <td>12</td>
+            <td>101</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td>Rajat</td>
+            <td>12</td>
+            <td>102</td>
+            <td>86</td>
+        </tr>
+        <tr>
+            <td>Riya</td>
+            <td>12</td>
+            <td>103</td>
+            <td>91</td>
+        </tr>
+    </table>
+</body>
+</html>

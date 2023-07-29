@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 day-6 flex properties</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        .main
+        {
+            background-color: lightblue;
+            padding: 20px;
+            display: flex;
+
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+
+            height: 500px;
+            align-items: center;
+        }
+        .main div
+        {
+            height: 100px;
+            width: 100px;
+        }
+        .div1
+        {
+            background-color: blue;
+            flex-basis: 150px;
+            /* height: 150px; */
+            align-self: flex-start;
+            order: 6;
+        }
+        .div2
+        {
+            background-color: green;
+            /* height: 200px; */
+            order: 3;
+        }
+        .div3
+        {
+            background-color: red;
+            order: 4;
+        }
+        .div4
+        {
+            background-color: pink;
+            order: 5;
+        }
+        .div5
+        {
+            background-color: yellowgreen;
+        }
+        .div6
+        {
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+    </div>
+</body>
+</html>

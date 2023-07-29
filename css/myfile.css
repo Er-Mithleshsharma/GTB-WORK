@@ -1,0 +1,20 @@
+p
+{
+    color: red;
+}
+h1
+{
+    color: green;
+}
+.class1
+{
+    background-color: lightblue;
+}
+.class2
+{
+    padding: 20px;
+}
+#dummyid
+{
+    border:5px dotted blue
+}

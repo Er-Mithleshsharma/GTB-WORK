@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <title>js day-5 date & time functions</title>
+</head>
+<body>
+    <p id="para"></p>
+    <script>
+        function clock()
+        {
+            var dt=new Date();
+            // alert(dt)
+            var d=dt.getDate();
+            // alert(d)
+            var mon=dt.getMonth()+1;
+            // alert(mon)
+            var y=dt.getFullYear();
+            var hr=dt.getHours();
+            var min=dt.getMinutes();
+            var sec=dt.getSeconds();
+            document.getElementById("para").innerHTML=d+"-"+mon+"-"+y+"<br>"+hr+":"+min+":"+sec
+
+            // setTimeout(clock,1000)
+            setInterval(clock,1000)
+        }
+
+
+        clock()
+    </script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 day-3 transform property, box-shadow</title>
+    <style>
+        .div1
+        {
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            margin: 150px;
+            color: white;
+            transition: all 0.5s linear;
+            transform-origin: left top;
+        }
+        .div1:hover
+        {
+            transform: rotate(360deg);
+            /* transform: rotate(-30deg); */
+        }
+        .div2
+        {
+            height: 200px;
+            width: 250px;
+            /* background-color: green; */
+            margin: 5px;
+            color: white;
+             overflow: hidden;
+            transition: all 0.5s linear;
+        }
+        .div2 img
+        {
+            height: 100%;
+            width: 100%;
+            transition: all 1s ease-in;
+            transform: rotate(0deg) scale(1.2);
+        }
+        .div2:hover img
+        {
+            transform: rotate(-360deg) scale(1);
+        }
+        .div3
+        {
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            margin: 5px;
+            color: white;
+            transition: all 0.5s linear;
+        }
+        .div3:hover
+        {
+            /* transform: translateX(30px); */
+            /* transform: translateX(-30px); */
+            /* transform: translateY(-30px); */
+            /* transform: translateY(30px); */
+            transform: translate(30px,50px);
+        }
+
+        .div4
+        {
+            height: 200px;
+            width: 250px;
+            background-color: green;
+            margin: 5px;
+            color: white;
+             overflow: hidden;
+            transition: all 0.5s linear;
+        }
+        .div4 img
+        {
+            height: 100%;
+            width: 105%;
+            transition: all 0.5s ease-in;
+        }
+        .div4:hover img
+        {
+            transform: translateX(-10px);
+        }
+
+        .div5
+        {
+            height: 150px;
+            width: 150px;
+            background-color: green;
+            margin: 30px;
+            color: white;
+            transition: all 0.5s linear;
+        }
+        .div5:hover
+        {
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            transform: scale(2);
+        }
+
+        .div6
+        {
+            height: 200px;
+            width: 250px;
+            background-color: green;
+            margin: 5px;
+            color: white;
+            overflow: hidden;
+            transition: all 0.5s linear;
+        }
+        .div6 img
+        {
+            height: 100%;
+            width: 100%;
+            transition: all 0.5s ease-in;
+            transform: scale(1.2);          /* Zoom out */
+            transform-origin: left top;
+        }
+        .div6:hover img
+        {
+            /*transform: scale(1.2);              // Zoom in */
+            transform: scale(1);              /* Zoom out */
+        }
+
+        .div7
+        {
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            margin: 30px;
+            color: white;
+            transition: all 0.5s linear;
+        }
+        .div7:hover
+        {
+            /* transform: skewX(30deg); */
+            /* transform: skewX(-30deg); */
+            /* transform: skewY(-30deg); */
+            /* transform: skewY(30deg); */
+            transform: skew(30deg,40deg);
+        }
+        .div8
+        {
+            height: 150px;
+            width: 150px;
+            background-color: green;
+            margin: 30px;
+            color: white;
+            transition: all 0.5s linear;
+        }
+        .div8:hover
+        {
+            /* transform: scale(2) translateX(100px); */
+            transform: matrix(2,0,0,2,100,0);
+        }
+
+        /* box-shadow */
+        .img1
+        {
+            height: 200px;
+            width: 200px;
+            margin: 30px;
+            transition: all 0.2s linear;
+            /* box-shadow: 2px 2px 4px 5px grey; */
+            /* box-shadow: -2px 2px 4px 5px grey; */
+            
+        }
+        .img1:hover
+        {
+            transform: translateY(-10px);
+            box-shadow: 0px 0px 9px 1px grey;
+        }
+
+        .div9
+        {
+            height: 200px;
+            width: 200px;
+            margin: 30px;
+            background-color: lightblue;
+            transition: all 0.2s linear;
+            /* box-shadow: 2px 2px 4px 5px grey inset; */
+            /* box-shadow: -2px 2px 4px 5px grey inset; */
+            box-shadow: 0px 0px 4px 5px grey inset;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">Text</div>
+    <div class="div2">
+        <img src="images/img4.jfif" alt="">
+    </div>
+    <div class="div3">Text</div>
+    <div class="div4">
+        <img src="images/img4.jfif" alt="">
+    </div>
+    <div class="div5">Text</div>
+
+    <div class="div6">
+        <img src="images/img4.jfif" alt="">
+    </div>
+
+    <div class="div7">Text</div>
+    <div class="div8">Text</div>
+
+    <img src="images/img2.jpg" class="img1">
+    <div class="div9">Text</div>
+</body>
+</html>

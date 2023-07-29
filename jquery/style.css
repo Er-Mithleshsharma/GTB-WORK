@@ -1,0 +1,103 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+}
+.slider
+{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.slide
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* opacity: 0.5; */
+    /* display: none;              hide */
+    opacity: 0;
+    /* transition: opacity 3s linear; */
+}
+.slide img
+{
+    height: 100%;
+    width: 100%;
+}
+.slide.active
+{
+     /*display: block;             show */
+    opacity: 1;
+    /* transition: opacity 3s linear; */
+}
+/* slide css close */
+
+.arrows img
+{
+    height: 45px;
+    width: 45px;
+}
+.arrows a
+{
+    position: absolute;
+    top: 35%;
+}
+.arrows .left
+{
+    left: 3%;
+}
+.arrows .right
+{
+    right: 3%;
+}
+/* arrows css close */
+
+.content
+{
+    position: absolute;
+    top: 35%;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.content a
+{
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+}
+.content a:hover
+{
+    background-color: black;
+    border: none;
+}
+/* content css close */
+
+.dots
+{
+    list-style-type: none;
+    padding-left: 0;
+    position: absolute;
+    top: 60%;
+    text-align: center;
+    width: 100%;
+}
+.dots li
+{
+    height: 14px;
+    width: 14px;
+    /* background-color: red; */
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 100%;
+    margin-right: 13px;
+}
+li.active2
+{
+    background-color: white;
+}
+/* dots css close */

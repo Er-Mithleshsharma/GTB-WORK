@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 day-5 text & column properties, google fonts, font-awesome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="all.min.css">
+    <style>
+        .div1
+        {
+            text-align: justify;
+            /* text-align-last: center;
+            text-indent: 150px;
+            letter-spacing: 3px;
+            word-spacing: 5px;
+            line-height: 20px; */
+            /* writing-mode: vertical-rl; */
+
+            width: 40%;
+            height: 300px;
+            background-color: lightblue;
+            overflow: auto;
+            white-space: pre-wrap;
+        }
+
+
+        .div2
+        {
+            column-count: 3;
+            column-gap: 40px;
+
+            /* column-rule-width: 5px;
+            column-rule-style: dotted;
+            column-rule-color: red; */
+
+            column-rule: 2px dashed blue;
+        }
+        .div2 p
+        {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        .div2 img
+        {
+            width: 100%;
+        }
+        .div2 h1
+        {
+            column-span: all;
+            text-align: center;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .fb
+        {
+            color: blue;
+            font-size: 1.4em;
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            padding-left: 20px;
+            padding-top: 15px;
+            box-sizing: border-box;
+        }
+        .fb:hover
+        {
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fb"><i class="fa-brands fa-facebook-f"></i></div>
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum consectetur, quasi excepturi modi hic dicta facere illo ab. Rerum nemo mollitia beatae iste autem odio facere suscipit dignissimos incidunt voluptates inventore laudantium, 
+        nesciunt vitae est odit aperiam ea, doloremque, nihil libero alias. Repudiandae aut sit quia asperiores libero velit quam animi 
+        aliquam? Veritatis ipsum possimus, consequatur ab eos dolorum tempore cum nam, dignissimos provident id quo! Voluptate inventore                      adipisci explicabo hic qui enim, voluptatum dolore quidem sunt est a aliquid nihil. Velit in nesciunt veniam officiis, possimus eligendi perferendis expedita omnis pariatur accusantium magni illum soluta dolore harum voluptatum aspernatur fugiat maiores ad nam. Quidem quibusdam officia similique nam eaque, laboriosam aperiam deserunt. Tenetur illum facilis, qui doloremque nam aliquid. Repudiandae ab, magnam libero officiis eaque iste dolorum laudantium dolorem rerum repellendus odit sapiente. Natus porro debitis saepe aperiam doloribus voluptate voluptas accusantium, atque fugiat? Tempora est exercitationem similique? Quidem quibusdam officia similique nam eaque, laboriosam aperiam deserunt. Tenetur illum facilis, qui doloremque nam aliquid. Repudiandae ab, magnam libero officiis eaque iste dolorum laudantium dolorem rerum repellendus odit sapiente. Natus porro debitis saepe aperiam doloribus voluptate voluptas accusantium, atque fugiat? Tempora est exercitationem similique?
+    </div><br><br>
+
+    <!-- column properties -->
+    <div class="div2">
+        <h1>COLUMN PROPERTIES</h1>
+        <img src="images/img2.jpg">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id esse fugit rerum velit omnis et vero dolorum temporibus eligendi. Aut, debitis blanditiis. Beatae sed aspernatur minima nihil repellat, tempore doloremque officiis reiciendis, quae nostrum fugit in aut. Consequatur maxime quibusdam aliquam, rem corrupti aut harum? Iste neque est quia, vitae aspernatur magnam aliquam reiciendis quidem voluptates ut dolorem dolore debitis cupiditate officiis earum iusto odio architecto cumque? Voluptas, exercitationem eligendi dolor animi, nulla eaque suscipit dicta aut neque aperiam obcaecati delectus recusandae, alias molestiae ducimus id! Sunt optio, facilis dignissimos inventore, numquam aliquam aut reprehenderit nostrum impedit tenetur saepe quae.</p>
+
+        <img src="images/img2.jpg">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id esse fugit rerum velit omnis et vero dolorum temporibus eligendi. Aut, debitis blanditiis. Beatae sed aspernatur minima nihil repellat, tempore doloremque officiis reiciendis, quae nostrum fugit in aut. Consequatur maxime quibusdam aliquam, rem corrupti aut harum? Iste neque est quia, vitae aspernatur magnam aliquam reiciendis quidem voluptates ut dolorem dolore debitis cupiditate officiis earum iusto odio architecto cumque? Voluptas, exercitationem eligendi dolor animi, nulla eaque suscipit dicta aut neque aperiam obcaecati delectus recusandae, alias molestiae ducimus id! Sunt optio, facilis dignissimos inventore, numquam aliquam aut reprehenderit nostrum impedit tenetur saepe quae.</p>
+
+        <img src="images/img2.jpg">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id esse fugit rerum velit omnis et vero dolorum temporibus eligendi. Aut, debitis blanditiis. Beatae sed aspernatur minima nihil repellat, tempore doloremque officiis reiciendis, quae nostrum fugit in aut. Consequatur maxime quibusdam aliquam, rem corrupti aut harum? Iste neque est quia, vitae aspernatur magnam aliquam reiciendis quidem voluptates ut dolorem dolore debitis cupiditate officiis earum iusto odio architecto cumque? Voluptas, exercitationem eligendi dolor animi, nulla eaque suscipit dicta aut neque aperiam obcaecati delectus recusandae, alias molestiae ducimus id! Sunt optio, facilis dignissimos inventore, numquam aliquam aut reprehenderit nostrum impedit tenetur saepe quae.</p>
+    </div>
+</body>
+</html>

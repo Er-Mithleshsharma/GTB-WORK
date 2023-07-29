@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 day-6 navigation with flex properties</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        body
+        {
+            margin: 0;
+        }
+        #header
+        {
+            /* display: flex; */
+            background-color: lightblue;
+            padding: 10px 0px;
+        }
+        .container
+        {
+            width: 1170px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+        }
+        .logo
+        {
+            width: 20%;
+            /* text-align: right; */
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .logo h1
+        {
+            margin: 0;
+        }
+        div.nav
+        {
+            width: 60%;
+            /* float: left; */
+            display: flex;
+        }
+        ul
+        {
+            width: 100%;
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-evenly;
+            margin:0px;
+            align-items: center;
+        }
+        a
+        {
+            color: black;
+            text-decoration: none;
+        }
+        div.btn
+        {
+            width: 20%;
+            /* float: left; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media only screen and (max-width:1199px) and (min-width:769px)
+        {
+            .container
+            {
+                width: auto;
+            }
+        }
+        @media only screen and (max-width:768px)
+        {
+            .container
+            {
+                flex-direction: column;
+                width: auto;
+                text-align: center;
+            }
+            .logo
+            {
+                justify-content: center;
+            }
+            .logo,div.nav,div.btn
+            {
+                width: 100%;
+            }
+            div.nav ul
+            {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="logo"><h1>LOGO</h1></div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="btn"><button>Click here</button></div>
+        </div>
+    </div>
+</body>
+</html>

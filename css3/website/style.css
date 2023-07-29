@@ -1,0 +1,674 @@
+*
+{
+    box-sizing: border-box;
+    font-family: calibri;
+}
+html
+{
+    /* scroll-behavior: smooth; */
+}
+body
+{
+    margin: 0%;
+}
+
+@media only screen and (min-width:1200px)       /* for large device */
+{
+    #header
+    {
+        height: 80px;
+        background-color: #095A6F;
+        color: white;
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+        transition: all 0.3s linear;
+        padding: 8px 0px;
+    }
+    .container
+    {
+        width: 1170px;
+        height: 100%;
+        /* background-color: red; */
+        margin: auto;
+    }
+    .logo
+    {
+        width: 14%;
+        float: left;
+    }
+    .logo img
+    {
+        margin-top: 10px;
+    }
+    .logo h1
+    {
+        float: right;
+        margin-right: 7px;
+    }
+    .nav
+    {
+        width: 80%;
+        float: left;
+        /* margin-left: ; */    
+    }
+    .logo a,.nav a
+    {
+        text-decoration: none;
+        color: white;
+        transition: all 0.3s linear;
+    }
+    .nav ul
+    {
+        list-style-type: none;
+        margin-top: 27px;
+        text-align: center;
+    }
+    .nav li
+    {
+        display: inline-block;
+        /* float: left; */
+        font-size: 1.4em;
+        margin-right: 20px;
+    }
+    #header a:hover
+    {
+        color: orange;
+    }
+    .nav .hm a
+    {
+        color: orange;
+    }
+    /* header css close */
+
+    #banner
+    {
+        height: 650px;
+        text-align: center;
+        color: white;
+        background-image: url(images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 15%;
+    }
+    #banner h1
+    {
+        margin-top: 0%;
+        font-size: 2.7em;
+    }
+    #banner p
+    {
+        font-size: 1.6em;
+    }
+    /* banner css close */
+
+    #about
+    {
+        height: 400px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    #about .ab
+    {
+        width: 30%;
+        margin-right: 3.33%;
+        float: left;
+    }
+    #about img
+    {
+        height: 60px;
+        width: 60px;
+        margin-top: 30px;
+    }
+    #about h1,#about h3
+    {
+        color: #095A6F;
+    }
+    /* about close */
+
+    #projects
+    {
+        background-color: #eeeeee;
+        height: 600px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    .pr
+    {
+        width: 30%;
+        margin-right: 3.33%;
+        float: left;
+    }
+    .pr img
+    {
+        width: 100%;
+        height: 250px;
+        border-radius: 7px;
+    }
+    #projects h1, #projects h3
+    {
+        color: rgb(40, 181, 125);
+    }
+    /* projects close */
+
+    #services
+    {
+        height: 400px;
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+        background-image: url(images/bg2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #services .sr
+    {
+        width: 30%;
+        margin-right: 3.33%;
+        float: left;
+    }
+    #services img
+    {
+        height: 60px;
+        width: 60px;
+        margin-top: 30px;
+    }
+    /* services close */
+
+
+    #footer
+    {
+        height: 250px;
+        background-color: #095A6F;
+        color: white;
+        /* padding-top: 15px; */
+    
+    }
+    .ft
+    {
+        width: 20%;
+        float: left;
+        margin-right: 3%;
+        margin-top: 15px;
+    }
+    .ft h3
+    {
+        color: orange;
+        /* text-align: center; */
+    }
+    .ft ul
+    {
+        list-style-type: none;
+        padding-left: 0;
+        float: left;
+        margin-top: 0;
+        line-height: 25px;
+    }
+    .ul1
+    {
+        width: 40%;
+    }
+    .ul2
+    {
+        width: 60%;
+    }
+    .ft img
+    {
+        height: 30px;
+        width: 30px;
+        margin-right: 15px;
+    }
+}
+
+
+@media only screen and (min-width:769px) and (max-width:1199px)       /* for medium device */
+{
+    #header
+    {
+        height: 80px;
+        background-color: #095A6F;
+        color: white;
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+        transition: all 0.3s linear;
+        padding: 8px 0px;
+    }
+    .container
+    {
+        width: auto;            /* new change */
+        height: 100%;
+        margin: auto;
+        padding: 0px 30px;         /* new change */
+    }
+    .logo
+    {
+        width: 19%;                /* new change */
+        float: left;
+    }
+    .logo img
+    {
+        margin-top: 0px;           /* new change */
+    }
+    .logo h1
+    {
+        float: right;
+        margin-right: 7px;
+        margin-top: 10px;          /* new change */
+    }
+    .nav
+    {
+        width: 80%;
+        float: left;
+        /* margin-left: ; */    
+    }
+    .logo a,.nav a
+    {
+        text-decoration: none;
+        color: white;
+        transition: all 0.3s linear;
+    }
+    .nav ul
+    {
+        list-style-type: none;
+        margin-top: 27px;
+        text-align: center;
+    }
+    .nav li
+    {
+        display: inline-block;
+        /* float: left; */
+        font-size: 1.4em;
+        margin-right: 20px;
+    }
+    #header a:hover
+    {
+        color: orange;
+    }
+    .nav .hm a
+    {
+        color: orange;
+    }
+    /* header css close */
+
+    #banner
+    {
+        height: 650px;
+        text-align: center;
+        color: white;
+        background-image: url(images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 25%;          /* new change */
+    }
+    #banner h1
+    {
+        margin-top: 0%;
+        font-size: 2.7em;
+    }
+    #banner p
+    {
+        font-size: 1.6em;
+    }
+    /* banner css close */
+
+    #about
+    {
+        height: 430px;             /* new change */
+        text-align: center;
+        padding-top: 30px;
+    }
+    #about .ab
+    {
+        width: 30%;
+        margin-right: 3.33%;
+        float: left;
+    }
+    #about img
+    {
+        height: 60px;
+        width: 60px;
+        margin-top: 30px;
+    }
+    #about h1,#about h3
+    {
+        color: #095A6F;
+    }
+    /* about close */
+
+    #projects
+    {
+        background-color: #eeeeee;
+        height: 1050px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    .pr
+    {
+        width: 45%;            /* new change */
+        margin-right: 5%;          /* new change */
+        float: left;
+    }
+    .pr img
+    {
+        width: 100%;
+        height: 250px;
+        border-radius: 7px;
+    }
+    .pr1
+    {
+        margin-top: 40px;
+        margin-left: 25%;
+    }
+    #projects h1, #projects h3
+    {
+        color: rgb(40, 181, 125);
+    }
+    /* projects close */
+
+    #services
+    {
+        height: 450px;              /* new change */
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+        background-image: url(images/bg2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #services .sr
+    {
+        width: 30%;
+        margin-right: 3.33%;
+        float: left;
+    }
+    #services img
+    {
+        height: 60px;
+        width: 60px;
+        margin-top: 30px;
+    }
+    /* services close */
+
+
+    #footer
+    {
+        height: 320px;              /* new change */
+        background-color: #095A6F;
+        color: white;
+    
+    }
+    .ft
+    {
+        width: 20%;
+        float: left;
+        margin-right: 3%;
+        margin-top: 15px;
+    }
+    .ft h3
+    {
+        color: orange;
+        /* text-align: center; */
+    }
+    .ft ul
+    {
+        list-style-type: none;
+        padding-left: 0;
+        float: left;
+        margin-top: 0;
+        line-height: 25px;
+    }
+    .ul1
+    {
+        width: 40%;
+    }
+    .ul2
+    {
+        width: 60%;
+    }
+    .ft img
+    {
+        height: 30px;
+        width: 30px;
+        margin-right: 15px;
+    }
+    .ft1
+    {
+        width: 30%;             /* new change */
+        margin-right: 2%;       /* new change */
+    }
+    .ft2
+    {
+        width: 16%;                 /* new change */
+        margin-right: 2%;       /* new change */
+    }
+}
+
+@media only screen and (max-width:768px)       /* for small device */
+{
+    #header
+    {
+        height: 80px;
+        background-color: #095A6F;
+        color: white;
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+        transition: all 0.3s linear;
+        padding: 8px 0px;
+    }
+    .container
+    {
+        width: auto;            /* new change */
+        height: 100%;
+        margin: auto;
+        padding: 0px 30px;         /* new change */
+    }
+    .logo
+    {
+        width: 19%;                /* new change */
+        float: left;
+    }
+    .logo img
+    {
+        margin-top: 0px;           /* new change */
+    }
+    .logo h1
+    {
+        float: right;
+        margin-right: 7px;
+        margin-top: 10px;          /* new change */
+    }
+    .nav
+    {
+        width: 80%;
+        float: left;
+        /* margin-left: ; */    
+    }
+    .logo a,.nav a
+    {
+        text-decoration: none;
+        color: white;
+        transition: all 0.3s linear;
+    }
+    .nav ul
+    {
+        list-style-type: none;
+        margin-top: 27px;
+        text-align: center;
+    }
+    .nav li
+    {
+        display: inline-block;
+        /* float: left; */
+        font-size: 1.4em;
+        margin-right: 20px;
+    }
+    #header a:hover
+    {
+        color: orange;
+    }
+    .nav .hm a
+    {
+        color: orange;
+    }
+    /* header css close */
+
+    #banner
+    {
+        height: 650px;
+        text-align: center;
+        color: white;
+        background-image: url(images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 25%;          /* new change */
+    }
+    #banner h1
+    {
+        margin-top: 0%;
+        font-size: 2.7em;
+    }
+    #banner p
+    {
+        font-size: 1.6em;
+    }
+    /* banner css close */
+
+    #about
+    {
+        height: 430px;             /* new change */
+        text-align: center;
+        padding-top: 30px;
+    }
+    #about .ab
+    {
+        width: 30%;
+        margin-right: 3.33%;
+        float: left;
+    }
+    #about img
+    {
+        height: 60px;
+        width: 60px;
+        margin-top: 30px;
+    }
+    #about h1,#about h3
+    {
+        color: #095A6F;
+    }
+    /* about close */
+
+    #projects
+    {
+        background-color: #eeeeee;
+        height: 1050px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    .pr
+    {
+        width: 45%;            /* new change */
+        margin-right: 5%;          /* new change */
+        float: left;
+    }
+    .pr img
+    {
+        width: 100%;
+        height: 250px;
+        border-radius: 7px;
+    }
+    .pr1
+    {
+        margin-top: 40px;
+        margin-left: 25%;
+    }
+    #projects h1, #projects h3
+    {
+        color: rgb(40, 181, 125);
+    }
+    /* projects close */
+
+    #services
+    {
+        height: 450px;              /* new change */
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+        background-image: url(images/bg2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #services .sr
+    {
+        width: 30%;
+        margin-right: 3.33%;
+        float: left;
+    }
+    #services img
+    {
+        height: 60px;
+        width: 60px;
+        margin-top: 30px;
+    }
+    /* services close */
+
+
+    #footer
+    {
+        height: 320px;              /* new change */
+        background-color: #095A6F;
+        color: white;
+    
+    }
+    .ft
+    {
+        width: 20%;
+        float: left;
+        margin-right: 3%;
+        margin-top: 15px;
+    }
+    .ft h3
+    {
+        color: orange;
+        /* text-align: center; */
+    }
+    .ft ul
+    {
+        list-style-type: none;
+        padding-left: 0;
+        float: left;
+        margin-top: 0;
+        line-height: 25px;
+    }
+    .ul1
+    {
+        width: 40%;
+    }
+    .ul2
+    {
+        width: 60%;
+    }
+    .ft img
+    {
+        height: 30px;
+        width: 30px;
+        margin-right: 15px;
+    }
+    .ft1
+    {
+        width: 30%;             /* new change */
+        margin-right: 2%;       /* new change */
+    }
+    .ft2
+    {
+        width: 16%;                 /* new change */
+        margin-right: 2%;       /* new change */
+    }
+}

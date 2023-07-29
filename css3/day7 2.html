@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 day-7 grid property</title>
+    <style>
+        body
+        {
+            margin: 0;
+        }
+        *
+        {
+            box-sizing: border-box;
+        }
+        .main
+        {
+            width: 99%;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 20% 60% 20%;
+            grid-template-columns: 10% 60% 30%;
+            text-align: center;
+            grid-gap: 7px;
+        }
+        .main div
+        {
+            background-color: lightblue;
+        }
+        .header,.footer
+        {
+            grid-column: 1/span 3;
+            padding-top: 4%;
+        }
+        .nav,.contents,.aside
+        {
+            padding-top: 200px
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            Header
+        </div>
+        <div class="nav">
+            Nav
+        </div>
+        <div class="contents">
+            Contents
+        </div>
+        <div class="aside">
+            Aside
+        </div>
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <title>js day-12 class inheritance</title>
+</head>
+<body>
+    <button onclick=" r1.display()">Color</button>
+    <button onclick=" r1.display2()">LB</button>
+    <script>
+        class shape 
+        {
+            constructor(color)
+            {
+                this.c=color
+            }
+            display()
+            {
+                alert("Color is: "+this.c)
+            }
+        }
+
+        // let s1=new shape("Red")
+        // s1.display()
+
+        class rectangle extends shape
+        {
+            constructor(length,breadth,color)
+            {
+                super(color)
+                this.l=length
+                this.b=breadth
+            }
+            display2()
+            {
+                alert("Length is: "+this.l)
+                alert("Breadth is: "+this.b)
+            }
+        }
+
+        let r1=new rectangle(4,5,"Red")
+        // r1.display()
+        // r1.display2()
+    </script>
+</body>
+</html>

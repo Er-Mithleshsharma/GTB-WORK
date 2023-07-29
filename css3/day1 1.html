@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 day-1 border-image</title>
+    <style>
+        .img1
+        {
+            height: 200px;
+            width: 250px;
+            margin: 30px;
+            border: 30px solid;
+            /* border-image-source: url(images/b1.png);
+            border-image-slice: 27; */
+            /* border-image-repeat: round;           */
+            /*border-image-repeat: round stretch;           // stretch, space, repeat, round */
+            /* border-image-width: 20px; */
+            /* border-image-outset: 7px; */
+
+            /* border-image: url(images/b1.png) 27/30px/7px round; */
+            border-image: url(images/b1.png) 27 round;
+        }
+
+        .img2
+        {
+            height: 200px;
+            width: 250px;
+            margin: 30px;
+            border: 30px solid;
+            /* border-image: linear-gradient(red,green) 30/30px; */
+            border-image: linear-gradient(red,green) 10;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/img3.jpg" class="img1">
+    <img src="images/img3.jpg" class="img2">
+</body>
+</html>

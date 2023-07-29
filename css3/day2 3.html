@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 day-2 transition effect-2</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        ul
+        {
+            width: 80%;
+            margin: auto;
+            padding-left: 0%;
+            list-style-type: none;
+        }
+        li
+        {
+            width: 23%;
+            margin-right: 2%;
+            float: left;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+        }
+        li img
+        {
+            height: 100%;
+            width: 100%;
+        }
+        li h2
+        {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding-top: 30%;
+            position: absolute;
+            margin: 0;
+            transition: all 1s ease-out;
+            opacity: 0;
+        }
+        .li1 h2
+        {
+            top: 0;
+            left: 100%;     /* right */
+        }
+        .li1:hover h2
+        {   
+            left:0%;        /* left */
+            opacity: 1;
+        }
+        .li2 h2
+        {
+            top: 0;
+            right: 100%;     /* left */
+        }
+        .li2:hover h2
+        {   
+            right:0%;        /* right */
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="li1">
+            <img src="images/img5.jpg" alt="">
+            <h2>Flower Image</h2>
+        </li>
+
+        <li class="li2">
+            <img src="images/img5.jpg" alt="">
+            <h2>Flower Image</h2>
+        </li>
+
+        <li class="li3">
+            <img src="images/img5.jpg" alt="">
+            <h2>Flower Image</h2>
+        </li>
+
+        <li class="li4">
+            <img src="images/img5.jpg" alt="">
+            <h2>Flower Image</h2>
+        </li>
+    </ul>
+
+    <!-- <style>
+        .img1
+        {
+            display: block;
+        }
+        .img2
+        {
+            position: relative;
+            bottom:60%;
+        }
+    </style>
+
+    <img src="images/img5.jpg" height="300px" class="img1">
+    <img src="images/img5.jpg" height="300px" class="img1 img2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil omnis, possimus officiis quibusdam veritatis impedit numquam vel ea enim dignissimos facilis, nam repudiandae perferendis laboriosam? Porro aliquid aut harum soluta? Possimus hic maxime omnis, dignissimos odit necessitatibus soluta ipsa! Minus similique esse vitae et ipsum adipisci blanditiis cumque non, corporis, ad est. Corporis laudantium inventore eligendi voluptates at magnam nihil aliquid sapiente dicta a eaque molestias quae alias, ad voluptatem similique reiciendis ab labore et nam perferendis eum doloremque. Nostrum iste illum eaque, harum sunt repudiandae dolor a nihil. Tenetur deserunt repellat doloribus minima aperiam ab, alias nemo rem! Ex qui deleniti veniam repudiandae excepturi amet voluptatibus a dolore error dicta soluta ipsum, nihil esse optio animi sint sapiente, neque ipsam at quidem deserunt odio. Voluptate incidunt beatae cupiditate vitae autem similique consequatur neque possimus laudantium deserunt hic itaque quibusdam provident ipsam blanditiis, porro fuga ad libero aliquid laborum perspiciatis.</p> -->
+</body>
+</html>

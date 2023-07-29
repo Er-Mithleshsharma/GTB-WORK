@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <title>js day-3 window.print, onmouseover, onmouseout events, css with js</title>
+</head>
+<body>
+    <button onclick="prnt()">Print</button>
+    <script>
+        function prnt()
+        { 
+            var pr=confirm("Are you sure to print?")
+            if(pr==true)
+            {
+                window.print()
+            }
+            else
+            {
+                alert("No print")
+            }
+        }
+    </script>
+
+    <h1 id="hd" onmouseover="over()" onmouseout="out()">Main Heading</h1>
+    <script>
+        function over()
+        {
+            document.getElementById("hd").style.color="red"
+            document.getElementById("hd").style.textDecoration="underline"
+        }
+        function out()
+        {
+            document.getElementById("hd").style.color=""
+            document.getElementById("hd").style.textDecoration=""
+        }
+    </script>
+
+    <h1 class="image"></h1>
+    <img src="images/img4.jfif" height="200px" class="image" onmouseover="imgover()" onmouseout="imgout()">
+    <p class="image"></p>
+
+    <script>
+        function imgover()
+        {
+            document.getElementsByClassName("image")[1].style.border="4px dotted red"
+        }
+        function imgout()
+        {
+            document.getElementsByClassName("image")[1].style.border=""
+        }
+    </script>
+
+    <img src="images/img4.jfif" height="200px" width="250px" class="image" onmouseover="chngover()" onmouseout="chngout()">
+    <script>
+        function chngover()
+        {
+            document.getElementsByClassName("image")[3].src="images/img5.jpg"
+        }
+        function chngout()
+        {
+            document.getElementsByClassName("image")[3].src="images/img4.jfif"
+        }
+    </script>
+
+    <!-- <input type="button" value="ON" class="inp" onclick="c1()">
+    <script>
+        function c1()
+        {
+            document.getElementsByClassName("inp")[0].value="OFF"
+        }
+    </script> -->
+
+    <!-- <style>
+        .btn
+        {
+            opacity:0
+        }
+    </style>
+    <button onclick="c1()" class="btn"><h5 class="hd1" style="margin: 0;">ON</h5></button>
+    <script>
+        function c1()
+        {
+            document.getElementsByClassName("hd1")[0].innerHTML="OFF"
+        }
+    </script> -->
+
+    <!-- <style>
+        .b2,.b3
+        {
+            opacity: 0;
+            /* display: none;
+            visibility: hidden; */
+        }
+    </style>
+
+    <button class="b1" onclick="bt1()">B1</button>
+    <button class="b2">B2</button>
+    <button class="b3">B3</button>
+    <script>
+        function bt1()
+        {
+            document.getElementsByClassName("b1")[0].style.opacity="0"
+            document.getElementsByClassName("b2")[0].style.opacity="1"
+        }
+    </script> -->
+</body>
+</html>

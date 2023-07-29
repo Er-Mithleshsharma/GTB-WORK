@@ -1,0 +1,112 @@
+
+<html lang="en">
+<head>
+    <title>Jquery day-7 Activemenu</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            font-family: calibri;
+        }
+        body
+        {
+            margin: 0;
+        }
+        #header
+        {
+            background-color: black;
+            color: white;
+            height: 80px;
+        }
+        .container
+        {
+            width: 1170px;
+            margin: auto;
+            height: 100%;
+        }
+        .logo
+        {
+            float: left;
+        }
+        .nav
+        {
+            float: left;
+            width: 70%;
+        }
+        .logo a,.nav a
+        {
+            text-decoration: none;
+            color: white;
+        }
+        .nav ul
+        {
+            list-style-type: none;
+            text-align: center;
+        }
+        .nav li
+        {
+            display: inline-block;
+            margin-right: 17px;
+            font-size: 1.4em;
+            margin-top: 10px;
+            padding: 5px;
+        }
+        .first
+        {
+            background-color: white;
+            border-radius: 5px;
+        }
+        li.first a
+        {
+            color: black;
+        }
+        .nav li:hover
+        {
+            background-color: white;
+            border-radius: 5px;
+        }
+        .nav li:hover a
+        {
+            color: black;
+        }
+        .active
+        {
+            background-color: white;
+            border-radius: 5px;
+        }
+        li.active a
+        {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="day7.html"><h1>INTERIOR SPA</h1></a>
+            </div>
+            <!-- logo close -->
+            <div class="nav">
+                <ul>
+                    <li class="first"><a href="day7.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <!-- nav close -->
+        </div>
+    </div>
+
+    <script src="jquery-3.6.4.min.js"></script>
+
+    <script>
+        $(".nav li").click(function(){
+            // $("li.first").removeClass("first")
+            $(this).addClass("active").siblings("li").removeClass("active")
+        })
+    </script>
+</body>
+</html>

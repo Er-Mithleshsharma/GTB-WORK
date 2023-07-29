@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Js day-13 Promises</title>
+</head>
+<body>
+    <p id="para"></p>
+    <script>
+        function msg(some)
+        {
+            document.getElementById("para").innerHTML=some
+        }
+
+        let pr=new Promise(function(res,rej){
+            // var x=1;
+            var x=prompt("Enter value of x")
+            if(x==0)
+            {
+                res("Hello")
+            }
+            else
+            {
+                rej("Cancel")
+            }
+        })
+
+        pr.then(function(val){
+            msg(val)
+        },function(err){
+            msg(err)
+        })
+    </script>
+</body>
+</html>

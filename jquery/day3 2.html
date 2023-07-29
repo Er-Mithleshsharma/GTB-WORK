@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <title>Jquery day-3 image preview with mouseover effect</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        .small
+        {
+            height: 70px;
+            width: 70px;
+            object-fit: contain;        /* used to arrange large size image in small area */
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-right: 7px;
+        }
+        /* .small:hover
+        {
+            box-shadow: 0 0 0 3px #b9e4ec;
+        } */
+        div
+        {
+            height: 500px;
+            width: 500px;
+            /* background-color: lightblue; */
+        }
+        .big
+        {
+            height: 100%;
+            width: 100%;
+            border: 0;
+            border-radius: 0px;
+            margin-right: 0px;
+        }
+        .sh
+        {
+            box-shadow: 0 0 0 3px #b9e4ec;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/p1.jpg" class="small">
+    <img src="images/p2.jpg" class="small">
+    <img src="images/p3.jpg" class="small">
+    <img src="images/p4.jpg" class="small">
+    <img src="images/p5.jpg" class="small">
+
+    <div>
+        <img src="images/p1.jpg" class="big">
+    </div>
+
+    <script src="jquery-3.6.4.min.js"></script>
+
+    <script>
+        $(".small").mouseover(function(){
+            $(this).addClass("sh")
+            $(this).siblings("img").removeClass("sh")
+
+            $("div").empty();
+            $(this).clone().addClass("big").appendTo("div")
+            $(".big").removeClass("sh")
+        })
+    </script>
+</body>
+</html>

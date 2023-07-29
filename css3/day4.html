@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 day-4 animation property</title>
+    <style>
+        .div1
+        {
+            height: 200px;
+            width: 250px;
+            background-color: green;
+            margin: 30px;
+            animation-name: animation1;
+            animation-duration: 2s;
+            /* animation-delay: 1s; */
+            animation-timing-function: linear;
+            /* animation-iteration-count: 3; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;                  /* normal, reverse, alternate, alternate-reverse */
+        }
+        @keyframes animation1
+        {
+            /* from{width:0px}
+            to{width:600px;background-color: red;} */
+
+            0%{width:0px}
+            100%{width:600px;background-color: red;}
+        }
+
+        .div2
+        {
+            height: 200px;
+            width: 250px;
+            background-color: green;
+            margin: 30px;
+            animation: animation1 2s 0s linear infinite alternate;
+        }
+
+        .div3
+        {
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            margin: 30px;
+            animation: animation2 2s 0s linear infinite alternate;
+        }
+        @keyframes animation2
+        {
+            0%{}
+            25%{background-color: red;border-radius: 10%;}
+            50%{background-color: yellow;border-radius: 20%;}
+            75%{background-color: orange;border-radius: 30%;}
+            100%{background-color: blue;border-radius: 50%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+
+</body>
+</html>

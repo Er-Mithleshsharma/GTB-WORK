@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>js day-4 onchange, onfocus, onblur events</title>
+</head>
+<body>
+    <!-- onchange event (1)-->
+    <select onchange="chng()">
+        <option value="">Choose Course</option>
+        <option>Course1</option>
+        <option>Course2</option>
+        <option>Course3</option>
+        <option>Course4</option>
+        <option>Course5</option>
+    </select>
+    <p></p>
+
+    <script>
+       function chng()
+       {
+           var val=document.getElementsByTagName("select")[0].value;
+           if(val!="")
+           {
+                document.getElementsByTagName("p")[0].innerHTML="You have selected "+val;
+           }
+           else
+           {
+            document.getElementsByTagName("p")[0].innerHTML=""
+           }
+       }
+    </script>
+
+    <!-- onchange event (2)-->
+    <input type="color" onchange="fillcolor()"><br><br>
+    <!-- <p></p> -->
+
+    <script>
+        function fillcolor()
+        {
+            var cl=document.getElementsByTagName("input")[0].value;
+            console.log(cl)
+            // document.bgColor=cl
+            document.getElementsByTagName("body")[0].style.backgroundColor=cl
+        }
+    </script>
+
+        <!-- onchange event (3)-->
+        <label>Choose gender:</label>
+        <label><input type="radio" name="gen" onclick="chng2()">Male</label>
+        <label><input type="radio" name="gen" onclick="chng2()">Female</label><br><br>
+        <output></output>
+        
+    <script>
+        function chng2()
+        {
+            var gen1=document.getElementsByName("gen")[0].checked;
+            var gen2=document.getElementsByName("gen")[1].checked;
+           (gen1>gen2)?document.getElementsByTagName("output")[0].innerHTML="Male":document.getElementsByTagName("output")[0].innerHTML="Female"
+            
+        }
+    </script>
+
+    <!-- onfocus, onblur events -->
+    <input type="text" placeholder="Enter name">
+    <p id="para"><b>hkjhjh</b></p>
+    <script>
+        var btn=document.getElementsByTagName("input")[3]
+        function foc()
+        {
+            document.getElementById("para").innerText="Hello"
+        }
+        btn.onclick=foc
+        
+        // function bl()
+        // {
+        //     document.getElementsByTagName("input")[3].style.backgroundColor=""
+        // }
+    </script>
+</body>
+</html>

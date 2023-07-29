@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 day-1 border-radius, gradient</title>
+    <style>
+        .div1
+        {
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            margin: 30px;
+
+            /* border-top-left-radius: 30px;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 20px; */
+
+            /* border-radius: 30px; */
+            /* border-radius: 30px 50px; */
+            /* border-radius: 30px 50px 10px; */
+            border-radius: 30px 50px 10px 20px;
+        }
+
+        .div2
+        {
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            margin: 30px;
+            border-radius: 100%;
+        }
+        img
+        {
+            height: 200px;
+            width: 200px;
+            margin: 30px;
+            border-radius: 100%;
+            border: 5px solid red;
+        }
+
+
+        .div3
+        {
+            height: 300px;
+            width: 300px;
+            margin: 30px;
+            /* background: linear-gradient(red,lightblue,green); */
+
+            /* background: linear-gradient(to left,red,lightblue,green); */
+            /* to top, to bottom, to left, to right (for horizontally & vertically fill) */
+
+            /* background: linear-gradient(to top left,red,lightblue,green); */
+            /* to top left, to top right, to bottom left, to bottom right (for diagonally fill) */
+
+            background: linear-gradient(180deg,red,lightblue,green); 
+            /* (according to angle) */
+        }
+
+        .div4
+        {
+            height: 300px;
+            width: 300px;
+            margin: 30px;
+            background: repeating-linear-gradient(red,lightblue,green 10%); 
+            /* directions same as above */
+        }
+
+        .div5
+        {
+            height: 300px;
+            width: 500px;
+            margin: 30px;
+            /* background: radial-gradient(red,lightblue,green);  */
+            background: radial-gradient(circle,red 20%,lightblue,green); 
+        }
+
+        .div6
+        {
+            height: 300px;
+            width: 500px;
+            margin: 30px;
+            background: repeating-radial-gradient(circle,red,lightblue,green 10%); 
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <img src="images/img5.jpg" alt="">
+
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+    <div class="div6"></div>
+</body>
+</html>

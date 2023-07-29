@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>js day-11 spread operator, classes</title>
+</head>
+<body>
+    <!-- <script>
+        let user1={name:"Aman",age:35}
+        // let user2=user1
+        let user2={...user1}
+
+        user1.name="Raman"
+        console.log(user1.name+"\n"+user2.name)
+    </script> -->
+
+    <!-- classes -->
+    <script>
+        class rectangle
+        {
+            /* constructor(length,breadth)
+            {
+                this.l=length
+                this.b=breadth
+            } */
+            constructor()
+            {
+              this.l=parseInt(prompt("Enter length"))
+              this.b=parseInt(prompt("Enter breadth"))
+            }
+            display()
+            {
+                alert("Length is "+this.l)
+                alert("Breadth is "+this.b)
+            }
+            area()
+            {
+                let ar=this.l*this.b
+                alert("Area is "+ar)
+            }
+        }
+
+        // let obj1=new rectangle(5,6)
+        let obj1=new rectangle()
+        obj1.display();
+        obj1.area();
+
+        /* let obj2=new rectangle(7,8)
+        obj2.display();
+        obj2.area(); */
+    </script>
+</body>
+</html>

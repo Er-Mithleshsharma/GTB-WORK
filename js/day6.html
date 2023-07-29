@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <title>js day-6 date & time functions</title>
+</head>
+<body>
+    <p id="para"></p>
+    <script>
+        function clock()
+        {
+            var dt=new Date();
+            var d=dt.getDate();
+            /* if(d<=9)
+            {
+                d="0"+d
+            } */
+            d=addzero(d)
+            var mon=dt.getMonth()+1;
+            mon=addzero(mon)
+            var y=dt.getFullYear();
+            var hr=dt.getHours();
+            if(hr>=12)
+                {
+                    var ampm="pm";
+                    /* 24-hr format to 12-hr format */
+                    if(hr==24)		            /* 24 :- for morning's 12 o'clock*/
+                    {
+                        hr=hr-24;			/* 24-24=0 */
+                        var ampm="am";
+                    }
+                    else if(hr>12)			/* 13 to 23 */
+                    {
+                        hr=hr-12;		
+                    }
+                }
+            else
+            {
+                var ampm="am";
+            }
+            hr=addzero(hr)
+            
+            var min=dt.getMinutes();
+            min=addzero(min)
+
+            var sec=dt.getSeconds();
+            sec=addzero(sec)
+
+            document.getElementById("para").innerHTML=d+"-"+mon+"-"+y+"<br>"+hr+":"+min+":"+sec+" "+ampm
+
+            setTimeout(clock,1000)
+
+            function addzero(i)
+            {
+                if(i<=9)
+                {
+                    i="0"+i
+                }
+                return i
+            }
+        }
+        clock()
+        // setInterval(clock,1000)
+    </script>
+
+    <!-- <script>
+        function addzero(i)
+        {
+            if(i<=9)
+            {
+                i="0"+i
+            }
+            return i
+        }
+    </script> -->
+</body>
+</html>

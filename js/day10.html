@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <title>js day-10 arrow functions, array destructuring, object, object destructuring, rest operator, spread operator </title>
+</head>
+<body>
+    <!-- arrow functions -->
+    <!-- <script>
+        let sum=()=>
+        {
+            // var a=5,b=4;
+            var a=parseInt(prompt("Enter value of a"))
+            var b=parseInt(prompt("Enter value of b"))
+            var c=a+b;
+            alert(c)
+        }
+        sum()
+    </script> -->
+
+    <!-- <script>
+        let fruits=["Apple", "Mango"];
+        console.log(fruits[0])
+    </script> -->
+
+    <!--array destructuring:- used to extract(or unpack) values from arrays into distinct variables. -->
+    <!-- <script>
+        let fruits=["Apple", "Mango"];
+        let [a,b]=fruits;
+        // document.write(a+"<br>"+b)
+        document.write(`${a}<br>${b}`)
+    </script> -->
+
+    <!-- object -->
+    <!-- <script>
+        let person={name:"Aman",age:34}
+        document.write(`${person.name}<br>${person.age}`)
+    </script> -->
+
+    <!-- object destructuring :-used to extract(or unpack) properties from objects, into distinct variables. -->
+    <!-- <script>
+        let person={name:"Aman",age:34}
+        let {name,age}=person
+        document.write(`${name}<br>${age}`)
+    </script> -->
+
+    <!-- <script>
+        let person={name:"Aman",age:34,rollno:101}
+        for(let key in person)
+        {
+            console.log(key,person[key])
+        }
+    </script> -->
+
+    <!-- rest operator -->
+    <!-- <script>
+        function msg(a,b,...c)
+        {
+            console.log(a)
+            console.log(b)
+            console.log(c)
+        }
+        msg(3,4,6,7,89,6)
+    </script> -->
+
+    <!-- spread operator -->
+    <script>
+        let fruits1=["Apple", "Mango"];
+        // let fruits2=fruits1;
+
+        let fruits2=[...fruits1]
+
+        fruits1.push("Pear")
+        console.log(`${fruits1}`)
+        console.log(`${fruits2}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <title>Jquery day-3 collapsible panel, accordion, css with jquery</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        div
+        {
+            width: 50%;
+            background-color: lightblue;
+            border: 1px solid black;
+            /* padding: 4px; */
+        }
+        button
+        {
+            width: 100%;
+            background-color: lightyellow;
+            padding: 7px;
+        }
+        p
+        {
+            padding: 9px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <button class="btn1">Button1</button>
+    <p class="p1">1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus dolor repellendus officia, unde, sequi laborum eum magni dolores doloribus provident vitae ad sit iure vel. Dolore ipsa tempore obcaecati voluptates placeat labore praesentium nulla? Enim temporibus corporis illum atque totam eligendi rem deleniti nulla quos, dolore facilis harum. Quam laborum voluptatum dignissimos quasi suscipit fuga! Qui recusandae accusantium hic numquam possimus aliquam at. Provident eligendi quia neque explicabo rem quibusdam quos praesentium nihil accusantium assumenda eaque totam harum debitis facere repellendus sint commodi nemo, vero, consectetur laudantium itaque nesciunt quis. Quidem non nostrum consectetur illo, doloribus excepturi iure dolorum veritatis.</p>
+
+    <button class="btn2">Button2</button>
+    <p class="p2">2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus dolor repellendus officia, unde, sequi laborum eum magni dolores doloribus provident vitae ad sit iure vel. Dolore ipsa tempore obcaecati voluptates placeat labore praesentium nulla? Enim temporibus corporis illum atque totam eligendi rem deleniti nulla quos, dolore facilis harum. Quam laborum voluptatum dignissimos quasi suscipit fuga! Qui recusandae accusantium hic numquam possimus aliquam at. Provident eligendi quia neque explicabo rem quibusdam quos praesentium nihil accusantium assumenda eaque totam harum debitis facere repellendus sint commodi nemo, vero, consectetur laudantium itaque nesciunt quis. Quidem non nostrum consectetur illo, doloribus excepturi iure dolorum veritatis.</p>
+</div>
+
+    <script src="jquery-3.6.4.min.js"></script>
+
+    <!-- collapsible panel -->
+    <!-- <script>
+        $("p").hide();
+        $(".btn1").click(function(){
+            $(".p1").slideToggle()
+        })
+
+        $(".btn2").click(function(){
+            $(".p2").slideToggle()
+        })
+    </script> -->
+
+    <!-- <script>
+        $("p").hide();
+        $("button").click(function(){
+            $(this).next("p").slideToggle()
+        })
+    </script> -->
+
+    <!-- accordion -->
+    <script>
+        $("p").hide();
+        $("button").click(function(){
+            $("p").slideUp()
+            $(this).next("p").slideDown()
+        })
+    </script>
+
+    <!-- css with jquery -->
+    <h1>Main Heading</h1>
+    <script>
+        $("h1").mouseover(function(){
+            $(this).css({color:"red",textDecoration:"underline"})
+        })
+
+        $("h1").mouseout(function(){
+            $(this).css({color:"",textDecoration:""})
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <title>jquery day-10 zoom plugin</title>
+    <link rel="stylesheet" href="zoomple.css">
+</head>
+<body>
+    <a href="images/img5.jpg" class="zoomple"><img src="images/img5.jpg" height="400px"> </a>
+
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="zoomple.js"></script>
+    <script>
+        $(document).ready(function() { 
+            $('.zoomple').zoomple({ 
+                blankURL : 'images/blank.gif',
+                bgColor : 'white',
+                loaderURL : 'images/loader.gif',
+                offset : {x:0,y:0},
+                zoomWidth : 200,  
+                zoomHeight : 200,
+                roundedCorners : false,
+                attachWindowToMouse:false,
+                windowPosition: {x:'right',y:'bottom'},
+                // delay : 1000,
+                showCursor:false,
+                showOverlay:true
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <title>Js day-1 alert box, document.write, variables, prompt box</title>
+</head>
+<body>
+    <!-- <script>
+        /* alert box :- used to show message to the user */
+        alert("Hello User")
+        document.write("Welcome")
+        document.bgColor="lightblue"
+    </script> -->
+
+    
+    <!-- <script>
+        /* variables :- used to store the value 
+            syntax :- var a=10;
+        */
+       var a=4;
+       var b=3;
+       var c=a+b;
+    //    alert("Sum is "+c)
+
+       var d=a-b;
+    //    alert("Difference is "+d)
+
+       /* arithmetic operator :- +,-,*,/,%(modulus operator) */
+
+       /* document.write("Sum is "+c)
+       document.write("<br>Difference is "+d) */
+
+       document.write("<font color='red'><b>Sum is "+c+"<br>Difference is "+d+"</b></font>")
+    </script> -->
+
+    <!-- <script>
+        /* prompt box :- used to get input from user 
+            it returns string value
+            parseInt or Number is used to convert string value into number
+        */
+        var a=parseInt(prompt("Enter value of a"))
+        var b=Number(prompt("Enter value of b"))
+        var c=a+b;
+        alert("Sum is "+c)
+    </script> -->
+
+    <!-- <script>
+        /* area of triangle */
+        var a=parseInt(prompt("Enter value of a"))
+        var b=Number(prompt("Enter value of b"))
+        var c=Number(prompt("Enter value of c"))
+        var s=(a+b+c)/2
+        var ar=Math.sqrt(s*(s-a)*(s-b)*(s-c))
+        ar=Math.round(ar)
+        alert("Area of triangle is "+ar)
+    </script> -->
+
+    <script>
+        var n,c,obt_marks,total_marks,p;
+        n=prompt("Enter name");
+        c=prompt("Enter class");
+        obt_marks=parseInt(prompt("Enter obtained marks"))
+        total_marks=parseInt(prompt("Enter total marks"))
+        p=(obt_marks/total_marks)*100;
+        document.write("Name: "+n+"<br>Class: "+c+"<br>Obtained Marks: "+obt_marks+"<br>Total marks: "+total_marks+"<br>Percentage: "+p+"%")
+    </script>
+</body>
+</html>

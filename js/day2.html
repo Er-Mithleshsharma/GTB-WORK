@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <title>Js day-2 if else condition, AND operator, confirm box, functions</title>
+</head>
+<body>
+    <!-- <script>
+        /* if else syntax:-
+            if(condition)
+            {
+                code
+            }
+            else
+            {
+                code
+            }
+        */
+
+        var a=prompt("Enter value of a")
+        var b=prompt("Enter value of b")
+        if(a>b)
+        {
+            alert("a is greater")
+        }
+        else if(b>a)
+        {
+            alert("b is greater")
+        }
+        else
+        {
+            alert("Both are same")
+        }
+    </script> -->
+
+    <!-- <script>
+        /* AND(&&) operator :- use to check multiple conditions at a time */
+        var a=prompt("Enter value of a")
+        var b=prompt("Enter value of b")
+        var c=prompt("Enter value of c")
+        if(a>b && a>c)
+        {
+            alert("a is greater")
+        }
+        else if(b>a && b>c)
+        {
+            alert("b is greater")
+        }
+        else
+        {
+            alert("c is greater")
+        }
+    </script> -->
+
+    <!-- <script>
+        var n,c,obt_marks,total_marks,p,gr;
+        n=prompt("Enter name");
+        c=prompt("Enter class");
+        obt_marks=parseInt(prompt("Enter obtained marks"))
+        total_marks=parseInt(prompt("Enter total marks"))
+        p=(obt_marks/total_marks)*100;
+        if(p>33 && p<50)
+        {
+            // document.write("Name: "+n+"<br>Class: "+c+"<br>Obtained Marks: "+obt_marks+"<br>Total marks: "+total_marks+"<br>Percentage: "+p+"% <br>Grade C")
+            gr="C"
+        }
+        else if(p>=50 && p<75)
+        {
+            // document.write("Name: "+n+"<br>Class: "+c+"<br>Obtained Marks: "+obt_marks+"<br>Total marks: "+total_marks+"<br>Percentage: "+p+"% <br>Grade B")
+            gr="B"
+        }
+        else if(p>=75 && p<90)
+        {
+            // document.write("Name: "+n+"<br>Class: "+c+"<br>Obtained Marks: "+obt_marks+"<br>Total marks: "+total_marks+"<br>Percentage: "+p+"% <br>Grade A")
+            gr="A"
+        }
+        else if(p>=90 && p<=100)
+        {
+            // document.write("Name: "+n+"<br>Class: "+c+"<br>Obtained Marks: "+obt_marks+"<br>Total marks: "+total_marks+"<br>Percentage: "+p+"% <br>Grade A+")
+            gr="A+"
+        }
+        else if(p<33)
+        {
+            // document.write("Name: "+n+"<br>Class: "+c+"<br>Obtained Marks: "+obt_marks+"<br>Total marks: "+total_marks+"<br>Percentage: "+p+"% <br>Fail")
+            gr="Fail"
+        }
+        else
+        {
+            // document.write("Name: "+n+"<br>Class: "+c+"<br>Obtained Marks: "+obt_marks+"<br>Total marks: "+total_marks+"<br>Percentage: "+p+"% <br>Invalid")
+            gr="Invalid"
+        }
+        document.write("Name: "+n+"<br>Class: "+c+"<br>Obtained Marks: "+obt_marks+"<br>Total marks: "+total_marks+"<br>Percentage: "+p+"% <br>Grade: "+gr)
+    </script> -->
+
+    <!-- <script>
+        /* confirm box :- used to take confirmation from user
+            it returns boolean value i.e. true(1), false(0)
+            OK :- true
+            Cancel :- false
+        */
+        var del=confirm("Are you sure to delete it?")
+        if(del==true)
+        {
+            alert("Deleted")
+        }
+        else
+        {
+            alert("No delete")
+        }
+    </script> -->
+
+    <!-- <button onclick="msg()">Click here</button> -->
+    <button ondblclick="msg()">Click here</button>
+    <p id="para"></p>
+    <script>
+        /* functions :- set of code 
+            syntax:- function functionname()
+                    {
+                        code
+                    }
+                    functionname()
+        */
+       function msg()
+       {
+            // alert("Hello")
+            // document.write("Hello")     it will stop html's previous coding
+            document.getElementById("para").innerHTML="Hello"
+       }
+
+        // msg()
+    </script>
+</body>
+</html>

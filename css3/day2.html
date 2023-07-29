@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 day-2 transition property</title>
+    <style>
+        .div1
+        {
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            margin: 30px;
+            /* transition-property: width;
+            transition-duration: 2s; */
+            /* transition-delay: 1s; */
+            /* transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1) */
+
+            /* transition: width 2s 0s linear; */
+            /* transition: width 2s linear,background-color 2s linear; */
+
+            transition: all 2s linear;
+        }
+        .div1:hover
+        {
+            width: 600px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+</body>
+</html>

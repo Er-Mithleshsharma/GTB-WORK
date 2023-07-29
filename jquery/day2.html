@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <title>Jquery day-2 sliding & fading functions</title>
+</head>
+<body>
+    <!-- <button>Toggle</button> -->
+    <p>1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, cum. Incidunt, repellendus. Laboriosam repudiandae suscipit, voluptatum quia, assumenda eum optio aliquam cumque in sunt magnam, quidem necessitatibus consequuntur. Enim necessitatibus reiciendis possimus adipisci facilis pariatur rem, deserunt animi. Aliquam voluptate voluptatem reprehenderit laborum! Facilis, saepe error cupiditate explicabo nihil nemo suscipit consectetur debitis? Tempore, pariatur, eius reiciendis, odio adipisci quis nobis quia provident amet blanditiis exercitationem consequuntur temporibus error obcaecati modi asperiores hic optio voluptatibus numquam.</p>
+    <p>2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, cum. Incidunt, repellendus. Laboriosam repudiandae suscipit, voluptatum quia, assumenda eum optio aliquam cumque in sunt magnam, quidem necessitatibus consequuntur. Enim necessitatibus reiciendis possimus adipisci facilis pariatur rem, deserunt animi. Aliquam voluptate voluptatem reprehenderit laborum! Facilis, saepe error cupiditate explicabo nihil nemo suscipit consectetur debitis? Tempore, pariatur, eius reiciendis, odio adipisci quis nobis quia provident amet blanditiis exercitationem consequuntur temporibus error obcaecati modi asperiores hic optio voluptatibus numquam.</p>
+
+    <script src="jquery-3.6.4.min.js"></script>
+
+    <!-- sliding functions :- slideUp, slideDown, slideToggle -->
+    <!-- <script>
+        $("p").click(function(){
+            $(this).slideUp(2000).delay(1000).slideDown(2000)
+        })
+    </script> -->
+
+    <!-- <script>
+        $("button").click(function(){
+            $("p").slideToggle(2000)
+        })
+    </script> -->
+
+    <!-- fading functions :- fadeOut, fadeIn, fadeToggle, fadeTo -->
+    <script>
+        $("p").dblclick(function(){
+            $(this).fadeOut(2000).delay(1000).fadeIn(2000)
+        })
+    </script>
+
+    <button>Click Here</button><br><br>
+    <img src="images/img1.jpg" height="200px">
+
+    <script>
+        $("img").hide();
+        $("button").click(function(){
+            $("img").fadeToggle(2000)
+        })
+    </script>
+
+    <!-- fadeTo -->
+    <script>
+        /* $("selector").fadeTo(time in millisec,opacity value) 
+            opacity is used to transparent the elmt, its value lies between 0 & 1
+            0 :- hide
+            1 :- show
+        */
+
+        $("p").mouseover(function(){
+            $(this).fadeTo(2000,0)
+        })
+
+        $("p").mouseout(function(){
+            $(this).fadeTo(2000,1)
+        })
+    </script>
+
+</body>
+</html>

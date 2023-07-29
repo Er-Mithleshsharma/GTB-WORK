@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 day-2 transition effect-1</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        .main
+        {
+            width: 500px;
+            margin: auto;
+        }
+        .main div
+        {
+            background-color: green;
+            color: white;
+            margin-bottom: 5px;
+            width: 100px;
+            padding: 7px;
+            border-radius: 5px;
+            text-align: right;
+        }
+        .main:hover div
+        {
+            width: 100%;
+        }
+        .div1
+        {
+            transition: all 2s ease;
+        }
+        .div2
+        {
+            transition: all 2s linear;
+        }
+        .div3
+        {
+            transition: all 2s ease-in;
+        }
+        .div4
+        {
+            transition: all 2s ease-out;
+        }
+        .div5
+        {
+            transition: all 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1">Ease</div>
+        <div class="div2">Linear</div>
+        <div class="div3">Ease-in</div>
+        <div class="div4">Ease-out</div>
+        <div class="div5">Ease-in-out</div>
+    </div>
+</body>
+</html>

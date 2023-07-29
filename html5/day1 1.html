@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 day-1 Semantic tags</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            font-family: calibri;
+        }
+        body
+        {
+            margin: 0;
+        }
+        header
+        {
+            height: 80px;
+            background-color: black;
+            color: lightblue;
+        }
+        article         /* for container */
+        {
+            width: 1170px;
+            height: 100%;
+            margin: auto;
+        }
+        .aside
+        {
+            width: 30%;
+            float: left;
+        }
+        .aside h1
+        {
+            font-size: 2em;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+        nav
+        {
+            width: 70%;
+            float: left;
+        }
+        .aside a,nav a
+        {
+            color: lightblue;
+            text-decoration: none;
+        }
+        nav ul
+        {
+            list-style-type: none;
+            margin-top: 28px;
+        }
+        nav li
+        {
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 1.3em;
+        }
+
+        .about
+        {
+            height: 500px;
+            padding-top: 30px;
+        }
+        .ab1
+        {
+            width: 60%;
+            float: left;
+        }
+        .ab2
+        {
+            width: 40%;
+            float: left;
+            padding-left: 30px;
+        }
+        .ab2 img
+        {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        #services
+        {
+            height: 600px;
+            text-align: center;
+            background-color: lightblue;
+            padding-top: 30px;
+        }
+        #services h1
+        {
+            font-size: 2em;
+        }
+        .ser
+        {
+            width: 30%;
+            margin-right: 3.33%;
+            float: left;
+        }
+        .ser img
+        {
+            width: 100%;
+        }
+        footer
+        {
+            background-color: black;
+            color: lightblue;
+            height: 80px;
+            padding-top: 25px;
+        }
+        footer p
+        {
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <article>           <!-- for container -->
+            <div class="aside">
+                <a href="day1 1.html"><h1>LOGO</h1></a>
+            </div>
+            <!-- logo close -->
+            <nav>
+                <ul>
+                    <li><a href="day1 1.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- nav close -->
+        </article>
+    </header>
+    <!-- header close -->
+
+    <main class="about">
+        <article>
+            <main class="ab1">
+                <h1>ABOUT US</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste nam necessitatibus explicabo sunt libero ducimus atque odio ad harum nemo ex, aspernatur accusantium quis porro? Voluptas, hic quae. Explicabo ipsum soluta suscipit accusantium commodi, accusamus harum voluptates cupiditate illum quaerat incidunt omnis quis officiis fugit sequi animi? Commodi vel quaerat dolore ad? Cumque dicta sapiente amet fuga soluta nihil accusamus ipsa rerum repellat et voluptates aut ut dolorum illum nemo laborum veritatis quasi laudantium modi reiciendis, tempore beatae quo fugiat? Asperiores quae fugiat odio. Pariatur amet, nulla corporis qui quis, fugit ipsa numquam aliquam magnam dolorem id modi illo natus. Ipsum distinctio porro suscipit illum maiores doloremque facilis provident eligendi corporis sed. Vel quo quidem provident ut exercitationem, quaerat ipsam voluptatem tempore delectus, optio nostrum vitae! Alias quam reprehenderit nihil. Corrupti, assumenda. Reprehenderit inventore nobis autem magni similique dolore voluptas! Totam facilis iste dolores minus laboriosam illo, placeat sequi distinctio?</p>
+            </main>
+            <main class="ab2">
+                <img src="images/img2.jpg" alt="">
+            </main>
+        </article>
+    </main>
+    <!-- about close -->
+
+    <section id="services">
+        <article>
+            <h1>OUR SERVICES</h1>
+
+            <section class="ser">
+                <img src="images/img4.jfif" alt="">
+                <h3>SERVICE 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima obcaecati sapiente voluptatum dolor similique tempora nobis expedita ab? Eius deleniti non facilis nemo mollitia quae molestiae laboriosam sapiente culpa aliquid.</p>
+            </section>
+
+            <section class="ser">
+                <img src="images/img4.jfif" alt="">
+                <h3>SERVICE 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima obcaecati sapiente voluptatum dolor similique tempora nobis expedita ab? Eius deleniti non facilis nemo mollitia quae molestiae laboriosam sapiente culpa aliquid.</p>
+            </section>
+
+            <section class="ser">
+                <img src="images/img4.jfif" alt="">
+                <h3>SERVICE 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima obcaecati sapiente voluptatum dolor similique tempora nobis expedita ab? Eius deleniti non facilis nemo mollitia quae molestiae laboriosam sapiente culpa aliquid.</p>
+            </section>
+        </article>
+    </section>
+    <!-- services close -->
+
+    <footer>
+        <article>
+            <p>&copy;All Rights Reserved 2023.</p>
+        </article>
+    </footer>
+</body>
+</html>

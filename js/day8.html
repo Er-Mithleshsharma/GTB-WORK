@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <title>js day-8 form validations</title>
+    <style>
+        output
+        {
+            color: red;
+            font-size: 0.6em;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <script src="myfile.js"></script>
+
+    <form action="day7.html" target="_blank" name="vform" onsubmit="return validate()">
+        <!-- name validation -->
+        <input type="text" placeholder="Enter Name" name="nm"><br>
+        <output name="no"></output><br>
+
+        <!-- phone no validation -->
+        <input type="tel" placeholder="Enter Phone No" name="phn"><br>
+        <output name="phno"></output><br>
+
+        <!-- password validation -->
+        <input type="password" placeholder="Enter Password" name="pass" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br>
+        <output name="passo"></output><br>
+
+        <!-- Confirm password validation -->
+        <input type="password" placeholder="Confirm Password" name="cpass" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br>
+        <output name="cpasso"></output><br>
+
+        <!-- radio button validation -->
+        <label>Choose Gender: </label>
+        <label><input type="radio" name="gen">Male</label>
+        <label><input type="radio" name="gen">Female</label><br>
+        <output name="geno"></output><br>
+
+        <input type="submit" value="Signup">
+    </form>
+</body>
+</html>
